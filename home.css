@@ -63,12 +63,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    .produtos {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
     .imagem-produto {
         max-width: 90%; /* Reduz a largura máxima para 90% da largura da tela */
         height: auto;
