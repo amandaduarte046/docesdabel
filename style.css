@@ -93,6 +93,12 @@ main {
     }
 }
 
+.imagem-produto {
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
 button.adicionar {
     background: #892149;
     color: white;
