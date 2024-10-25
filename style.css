@@ -34,11 +34,41 @@ main {
     margin-bottom: 50px; /* Espaçamento entre as categorias */
 }
 
-.produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automaticamente a quantidade de colunas, com um mínimo de 250px por coluna */
-    gap: 30px; /* Espaçamento entre os produtos */
-    justify-content: center; /* Centraliza os produtos horizontalmente */
+
+.produto {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+    max-width: 300px; /* Ajuste conforme necessário */
+    margin: 0 auto 20px auto; /* Adiciona espaçamento entre os produtos */
+    padding: 20px;
+    background-color: #f9f9f9; /* Adicione um fundo, se quiser */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar */
+}
+
+.produto img {
+    max-width: 100%; /* Faz a imagem ocupar a largura do contêiner */
+    height: auto;
+    border-radius: 8px; /* Para bordas arredondadas */
+}
+
+.produto h3, .produto p {
+    text-align: center;
+}
+
+.botao-adicionar {
+    margin-top: 10px; /* Adiciona espaçamento acima do botão */
+    background-color: #892149; /* Muda a cor de fundo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao-adicionar:hover {
+    background-color: #741b3a; /* Cor ao passar o mouse */
 }
 
 .produto {
@@ -56,15 +86,6 @@ main {
     text-align: center; /* Centraliza o título da categoria */
 }
 
-.produto:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
-}
-
-.imagem-produto {
-    max-width: 100%; /* Ajusta a largura máxima da imagem */
-    height: auto;    /* Mantém a proporção da imagem */
-    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
-}
 
 @media (max-width: 768px) {
     .produtos {
