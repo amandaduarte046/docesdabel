@@ -63,14 +63,13 @@ main {
 }
 
 @media (max-width: 768px) {
-    .imagem-produto {
-        max-width: 90%; /* Reduz a largura máxima para 90% da largura da tela */
+    .imagem-banner {
+        max-width: 100%;
         height: auto;
     }
 }
 
-
-.imagem-produto {
+.imagem-banner {
     max-width: 100%; /* Ajusta a largura máxima da imagem */
     height: auto;    /* Mantém a proporção da imagem */
     margin-bottom: 10px; /* Espaçamento abaixo da imagem */
