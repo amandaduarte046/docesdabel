@@ -62,6 +62,12 @@ main {
     color: #666;
 }
 
+@media (max-width: 768px) {
+    .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
 .imagem-produto {
     max-width: 100%; /* Ajusta a largura máxima da imagem */
     height: auto;    /* Mantém a proporção da imagem */
