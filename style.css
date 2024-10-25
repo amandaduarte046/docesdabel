@@ -36,8 +36,8 @@ main {
 
 .container-produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta o número de colunas automaticamente */
-    gap: 20px; /* Espaçamento entre os produtos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
